@@ -1,0 +1,30 @@
+- posts = data.blog.posts.values.sort_by { |post| post.fecha_de_publicacion}
+
+header.intro-header style="background-image: url('images/home-bg.jpg')"
+  .container
+    .row
+      .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
+        .site-heading
+          h1
+            | Virgen de Loreto
+          hr.small
+            span.subheading
+              | Comunidad
+
+.container
+  .row
+    .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
+      - posts.reverse_each do |post|
+        .post-preview
+          a href="/posts/#{post.slug}.html"
+            h2.post-title
+              = post.titulo
+            - if post.key?('subtitulo') && post.subtitulo
+              h3.post-subtitle
+                = post.subtitulo
+          p.post-meta
+            | Escrito por 
+            a href="#"
+              | #{post.autor.nombre}
+            |  el #{post.fecha_de_publicacion.strftime('%e/%m/%Y')}
+        hr

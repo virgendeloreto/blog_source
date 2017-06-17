@@ -1,0 +1,123 @@
+{
+  "version": 3,
+  "contentTypes": [
+    {
+      "id": "2rBBdkQD96waKeg6YiigCA",
+      "name": "Author",
+      "displayField": "nombre",
+      "fields": [
+        {
+          "id": "nombre",
+          "name": "nombre",
+          "type": "Symbol"
+        },
+        {
+          "id": "role",
+          "name": "role",
+          "type": "Symbol"
+        },
+        {
+          "id": "avatar",
+          "name": "avatar",
+          "type": "Link",
+          "linkType": "Asset"
+        },
+        {
+          "id": "joinedAt",
+          "name": "joinedAt",
+          "type": "Date"
+        }
+      ]
+    },
+    {
+      "id": "pagina",
+      "name": "Pagina",
+      "displayField": "titulo",
+      "fields": [
+        {
+          "id": "titulo",
+          "name": "Titulo",
+          "type": "Symbol"
+        },
+        {
+          "id": "subtitulo",
+          "name": "Subtitulo",
+          "type": "Symbol"
+        },
+        {
+          "id": "contenido",
+          "name": "Contenido",
+          "type": "Text"
+        },
+        {
+          "id": "imagenCabecera",
+          "name": "Imagen Cabecera",
+          "type": "Link",
+          "linkType": "Asset"
+        },
+        {
+          "id": "slug",
+          "name": "slug",
+          "type": "Symbol"
+        }
+      ]
+    },
+    {
+      "id": "post",
+      "name": "Post",
+      "displayField": "titulo",
+      "fields": [
+        {
+          "id": "titulo",
+          "name": "Titulo",
+          "type": "Symbol"
+        },
+        {
+          "id": "subtitulo",
+          "name": "Subtitulo",
+          "type": "Symbol"
+        },
+        {
+          "id": "autor",
+          "name": "Autor",
+          "type": "Link",
+          "linkType": "Entry"
+        },
+        {
+          "id": "contenido",
+          "name": "Contenido",
+          "type": "Text"
+        },
+        {
+          "id": "imagenCabecera",
+          "name": "Imagen Cabecera",
+          "type": "Link",
+          "linkType": "Asset"
+        },
+        {
+          "id": "tags",
+          "name": "Tags",
+          "type": "Array",
+          "items": {
+            "type": "Symbol"
+          }
+        },
+        {
+          "id": "slug",
+          "name": "slug",
+          "type": "Symbol"
+        },
+        {
+          "id": "fechaDePublicacion",
+          "name": "Fecha de Publicacion",
+          "type": "Date"
+        }
+      ]
+    }
+  ],
+  "assets": [
+
+  ],
+  "entries": {
+  }
+}
