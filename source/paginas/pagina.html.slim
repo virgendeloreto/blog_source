@@ -13,3 +13,16 @@ header.intro-header style="#{estilo_fondo}"
   .row
     .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
       == Kramdown::Document.new(pagina.contenido).to_html
+
+- if pagina.key?('adjuntos') && pagina.adjuntos
+  .container
+    .row
+      .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
+        h4
+          | Adjuntos
+        ul
+          - pagina.adjuntos.each do |adjunto|
+            li
+              a href="#{adjunto.url}"
+                | #{adjunto.title}
+
