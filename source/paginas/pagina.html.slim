@@ -21,7 +21,7 @@ header.intro-header style="#{estilo_fondo}"
         h4
           | Adjuntos
         ul
-          - pagina.adjuntos.each do |adjunto|
+          - pagina.adjuntos.sort_by { |a| a.title }.each do |adjunto|
             li
               a href="#{adjunto.url}"
                 | #{adjunto.title}
