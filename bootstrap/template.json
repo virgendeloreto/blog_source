@@ -59,6 +59,15 @@
           "id": "slug",
           "name": "slug",
           "type": "Symbol"
+        },
+        {
+          "id": "adjuntos",
+          "name": "Adjuntos",
+          "type": "Array",
+          "items": {
+            "type": "Link",
+            "LinkType": "Asset"
+          }
         }
       ]
     },
